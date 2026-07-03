@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Репетитор по математике</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background: #eff5f3;
+        color: #16241f;
+      }
+      header {
+        padding: 22px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 1.15rem;
+        color: #2f6f5e;
+      }
+      nav a {
+        margin-left: 24px;
+        text-decoration: none;
+        color: #16241f;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .hero {
+        padding: 70px 32px;
+        max-width: 760px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      h1 {
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 14px;
+        line-height: 1.15;
+      }
+      .hero p {
+        opacity: 0.7;
+        margin-bottom: 26px;
+      }
+      .btn {
+        background: #2f6f5e;
+        color: white;
+        padding: 14px 28px;
+        border-radius: 100px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+      }
+      .card {
+        background: white;
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 20px 40px -20px rgba(22, 36, 31, 0.25);
+      }
+      .card h3 {
+        font-family: "Poppins";
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 0.88rem;
+      }
+      .reviews {
+        background: #16241f;
+        color: #eff5f3;
+        padding: 56px 32px;
+      }
+      .reviews h2 {
+        font-family: "Poppins";
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .rev-grid {
+        max-width: 700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .rev {
+        background: #1e312a;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        opacity: 0.85;
+      }
+      footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.85rem;
+        opacity: 0.5;
+      }
+      @media (max-width: 640px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+        .rev-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Математика с Аидой 📚</div>
+      <nav><a href="#reviews">Отзывы</a><a href="#">Записаться</a></nav>
+    </header>
+    <section class="hero">
+      <div>
+        <h1>Подготовка к ЕНТ и школьной программе</h1>
+        <p>
+          Индивидуальные занятия онлайн и офлайн. Разбираем пробелы, готовимся к
+          экзаменам, объясняю просто.
+        </p>
+        <a class="btn" href="#reviews">Отзывы учеников</a>
+      </div>
+      <div class="card">
+        <h3>Расписание на неделю</h3>
+        <div class="row"><span>Пн, 16:00</span><span>Алгебра</span></div>
+        <div class="row"><span>Ср, 17:00</span><span>Геометрия</span></div>
+        <div class="row"><span>Сб, 12:00</span><span>Пробный ЕНТ</span></div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <h2>Что говорят ученики</h2>
+      <div class="rev-grid">
+        <div class="rev">
+          «Подняла оценку с тройки до пятёрки за семестр» — Айгерим, 9 класс
+        </div>
+        <div class="rev">
+          «Объясняет так, что реально понятно» — Ерлан, 11 класс
+        </div>
+      </div>
+    </section>
+    <footer>Демо-проект · сделано в портфолио</footer>
+  </body>
+</html>
