@@ -1,126 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кофейня «Утро»</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap");
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: "Inter", sans-serif;
-        background: #fbf6ef;
-        color: #2a1c14;
-      }
-      header {
-        padding: 22px 32px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid rgba(42, 28, 20, 0.1);
-      }
-      .logo {
-        font-family: "Poppins";
-        font-weight: 700;
-        font-size: 1.2rem;
-        color: #ff5d3a;
-      }
-      nav a {
-        margin-left: 24px;
-        text-decoration: none;
-        color: #2a1c14;
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
-      .hero {
-        padding: 80px 32px;
-        text-align: center;
-        max-width: 680px;
-        margin: 0 auto;
-      }
-      .hero span {
-        font-size: 2.4rem;
-      }
-      h1 {
-        font-family: "Poppins";
-        font-weight: 700;
-        font-size: 2.6rem;
-        margin: 18px 0 14px;
-        color: #2a1c14;
-      }
-      .hero p {
-        opacity: 0.7;
-        font-size: 1.05rem;
-        margin-bottom: 30px;
-      }
-      .btn {
-        background: #ff5d3a;
-        color: white;
-        padding: 14px 30px;
-        border-radius: 100px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-      }
-      .menu {
-        background: #2a1c14;
-        color: #fbf6ef;
-        padding: 64px 32px;
-      }
-      .menu h2 {
-        font-family: "Poppins";
-        text-align: center;
-        margin-bottom: 36px;
-      }
-      .items {
-        max-width: 600px;
-        margin: 0 auto;
-        display: grid;
-        gap: 16px;
-      }
-      .item {
-        display: flex;
-        justify-content: space-between;
-        padding: 14px 0;
-        border-bottom: 1px dashed rgba(251, 246, 239, 0.2);
-      }
-      footer {
-        text-align: center;
-        padding: 30px;
-        font-size: 0.85rem;
-        opacity: 0.5;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="logo">Утро ☕</div>
-      <nav><a href="#menu">Меню</a><a href="#">Контакты</a></nav>
-    </header>
-    <section class="hero">
-      <span>☕</span>
-      <h1>Свежий кофе в центре города</h1>
-      <p>
-        Обжариваем зёрна сами, печём круассаны каждое утро. Приходите
-        позавтракать или заберите с собой.
-      </p>
-      <a class="btn" href="#menu">Смотреть меню</a>
-    </section>
-    <section class="menu" id="menu">
-      <h2>Меню</h2>
-      <div class="items">
-        <div class="item"><span>Флэт уайт</span><span>900 ₸</span></div>
-        <div class="item"><span>Капучино</span><span>850 ₸</span></div>
-        <div class="item">
-          <span>Круассан классический</span><span>700 ₸</span>
-        </div>
-        <div class="item"><span>Чизкейк дня</span><span>1200 ₸</span></div>
-      </div>
-    </section>
-    <footer>Демо-проект · сделано в портфолио</footer>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кофейня «Утро»</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap');
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Inter',sans-serif; background:#FBF6EF; color:#2A1C14;}
+  header{padding:22px 32px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(42,28,20,0.1);}
+  .logo{font-family:'Poppins'; font-weight:700; font-size:1.2rem; color:#FF5D3A;}
+  nav a{margin-left:24px; text-decoration:none; color:#2A1C14; font-size:0.9rem; font-weight:500;}
+  .hero{padding:80px 32px; text-align:center; max-width:680px; margin:0 auto;}
+  .hero span{font-size:2.4rem;}
+  h1{font-family:'Poppins'; font-weight:700; font-size:2.6rem; margin:18px 0 14px; color:#2A1C14;}
+  .hero p{opacity:0.7; font-size:1.05rem; margin-bottom:30px;}
+  .btn{background:#FF5D3A; color:white; padding:14px 30px; border-radius:100px; text-decoration:none; font-weight:600; display:inline-block;}
+  .menu{background:#2A1C14; color:#FBF6EF; padding:64px 32px;}
+  .menu h2{font-family:'Poppins'; text-align:center; margin-bottom:36px;}
+  .items{max-width:600px; margin:0 auto; display:grid; gap:16px;}
+  .item{display:flex; justify-content:space-between; padding:14px 0; border-bottom:1px dashed rgba(251,246,239,0.2);}
+  footer{text-align:center; padding:30px; font-size:0.85rem; opacity:0.5;}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Утро ☕</div>
+    <nav><a href="#menu">Меню</a><a href="#">Контакты</a></nav>
+  </header>
+  <section class="hero">
+    <span>☕</span>
+    <h1>Свежий кофе в центре города</h1>
+    <p>Обжариваем зёрна сами, печём круассаны каждое утро. Приходите позавтракать или заберите с собой.</p>
+    <a class="btn" href="#menu">Смотреть меню</a>
+  </section>
+  <section class="menu" id="menu">
+    <h2>Меню</h2>
+    <div class="items">
+      <div class="item"><span>Флэт уайт</span><span>900 ₸</span></div>
+      <div class="item"><span>Капучино</span><span>850 ₸</span></div>
+      <div class="item"><span>Круассан классический</span><span>700 ₸</span></div>
+      <div class="item"><span>Чизкейк дня</span><span>1200 ₸</span></div>
+    </div>
+  </section>
+  <footer>Демо-проект · сделано в портфолио</footer>
+</body>
 </html>
